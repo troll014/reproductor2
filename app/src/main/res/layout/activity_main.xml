@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Imagen de fondo (para audios) -->
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/portada1"
+        android:visibility="gone" />
+
+    <!-- VideoView -->
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Controles -->
+    <LinearLayout
+        android:id="@+id/controles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:padding="16dp">
+
+        <!-- Botón Anterior -->
+        <ImageButton
+            android:id="@+id/btnAnterior"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/anterior" />
+
+        <!-- Botón Reproducir/Pausar -->
+        <ImageButton
+            android:id="@+id/btnReproducir"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/reproducir" />
+
+        <!-- Botón Detener -->
+        <ImageButton
+            android:id="@+id/btnDetener"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/detener" />
+
+        <!-- Botón Siguiente -->
+        <ImageButton
+            android:id="@+id/btnSiguiente"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/siguiente" />
+
+        <!-- Botón Repetir/No Repetir -->
+        <ImageButton
+            android:id="@+id/btnRepetir"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/repetir" />
+    </LinearLayout>
+</RelativeLayout>
